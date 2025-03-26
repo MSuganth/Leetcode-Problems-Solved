@@ -12,7 +12,7 @@ class Solution {
         else if(upcount == 1){
              int temp = w.charAt(0);
              if( temp >= 65 && temp <= 90) return true;
-             return false;
+            //  return false;
         }
         return false;
     }
