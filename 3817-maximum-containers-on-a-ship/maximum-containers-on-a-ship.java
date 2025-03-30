@@ -4,6 +4,7 @@ class Solution {
            int count = 0;
            while(i <= n*n){
                if( (i*w) <= maxWeight) count++;
+               else break;
                i++;
            }
            return count;
