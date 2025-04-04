@@ -13,9 +13,7 @@ class Solution {
                  int in = uni.indexOf(message.charAt(i));
                  res += alpha.charAt(in);
                }
-               else{
-                  res += message.charAt(i);
-               }
+               else res += message.charAt(i);
            }
            return res;
     }
