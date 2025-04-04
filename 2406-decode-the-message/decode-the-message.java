@@ -1,6 +1,6 @@
 class Solution {
     public String decodeMessage(String key, String message) {
-           String uni = "";
+          String uni = "";
            String alpha = "abcdefghijklmnopqrstuvwxyz";
            for(int i = 0;i<key.length();i++){
                String temp = "";
