@@ -9,10 +9,7 @@ class Solution {
            }
            String res = "";
            for(int i = 0;i<message.length();i++){
-               if(message.charAt(i) != ' '){
-                 int in = uni.indexOf(message.charAt(i));
-                 res += alpha.charAt(in);
-               }
+               if(message.charAt(i) != ' ') res += alpha.charAt(uni.indexOf(message.charAt(i)));
                else res += message.charAt(i);
            }
            return res;
