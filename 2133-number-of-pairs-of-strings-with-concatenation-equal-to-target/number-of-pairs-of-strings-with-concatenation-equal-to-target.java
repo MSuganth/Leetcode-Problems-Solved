@@ -6,7 +6,6 @@ class Solution {
                  if((nums[i]+nums[j]).equals(target)) count++;
               }
               for(int j = i+1;j<nums.length;j++){
-                  String t = nums[i]+nums[j];
                   if((nums[i]+nums[j]).equals(target)) count++;
               }
           }
