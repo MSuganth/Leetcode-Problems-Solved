@@ -1,7 +1,7 @@
 class Solution {
     public int findMaxK(int[] nums) {
           int max = 0;
-          List<Integer> arr = new ArrayList<>();
+          Set<Integer> arr = new HashSet<>();
           for(int i : nums){
              if(i < 0) arr.add(i);
           }
