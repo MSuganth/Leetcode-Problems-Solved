@@ -15,17 +15,13 @@ class Solution {
           Set<Integer> res = new HashSet<>();
           for(int i : n1){
              if(n2.contains(i)){
-                if(n3.contains(i)){
-                    res.add(i);
-                }
+                if(n3.contains(i)) res.add(i);
                 else res.add(i);
              }
              else if(n3.contains(i)) res.add(i);
           }
           for(int i:n2){
-             if(n3.contains(i)){
-                 res.add(i);
-             }
+             if(n3.contains(i)) res.add(i);
           }
           List<Integer> arr = new ArrayList<>();
           for(int i:res){
