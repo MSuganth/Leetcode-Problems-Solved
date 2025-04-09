@@ -3,7 +3,7 @@ class Solution {
           int max = 0;
           List<Integer> arr = new ArrayList<>();
           for(int i : nums){
-             arr.add(i);
+             if(i < 0) arr.add(i);
           }
           int emax = 0;
           for(int i = 0;i<nums.length;i++){
