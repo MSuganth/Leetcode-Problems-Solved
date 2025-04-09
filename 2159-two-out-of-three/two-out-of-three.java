@@ -12,12 +12,6 @@ class Solution {
           for(int i = 0;i<nums3.length;i++){
              n3.add(nums3[i]);
           }
-          System.out.println(n1);
-          System.out.println("------------");
-          System.out.println(n2);
-          System.out.println("------------");
-          System.out.println(n3);
-          System.out.println("-------------");
           Set<Integer> res = new HashSet<>();
           for(int i : n1){
              if(n2.contains(i)){
