@@ -1,6 +1,7 @@
 class Solution {
     public String reversePrefix(String w, char ch) {
-           String rev = "";
+           String rev = ch + "";
+           if(!w.contains(rev)) return w;
            int in = w.length();
            for(int i = 0;i<w.length();i++){
                if(w.charAt(i) == ch){
@@ -9,7 +10,7 @@ class Solution {
                }
            }
            if(in == w.length()) return w;
-           for(int i = in;i>=0;i--){
+           for(int i = in-1;i>=0;i--){
                rev += w.charAt(i);
            }
            for(int i = in+1;i<w.length();i++){
