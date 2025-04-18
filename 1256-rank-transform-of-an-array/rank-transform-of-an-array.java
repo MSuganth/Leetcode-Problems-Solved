@@ -12,7 +12,6 @@ class Solution {
                r++;
            }
            for(int i = 0;i<arr.length;i++) arr[i] = rank.get(arr[i]);
-           //System.out.println(rank);
            return arr;
     }
 }
