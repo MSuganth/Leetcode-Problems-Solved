@@ -1,8 +1,5 @@
 class Solution {
     public int[] rearrangeArray(int[] nums) {
-           int l = nums.length/2;
-           int[] evenarr = new int[l];
-           int[] oddarr = new int[l];
            int[] res = new int[nums.length];
            int in = 0;
            int ind = 1;
