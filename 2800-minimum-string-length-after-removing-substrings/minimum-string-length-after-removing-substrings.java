@@ -14,7 +14,6 @@ class Solution {
                 }
                 else stack.push(ch);
            }
-           System.out.println(stack);
            return stack.size();
     }
 }
