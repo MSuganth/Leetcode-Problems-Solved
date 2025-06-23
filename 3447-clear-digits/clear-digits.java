@@ -6,8 +6,10 @@ class Solution {
                if(Character.isDigit(ch)) stack.pop();
                else stack.push(ch);
            }
-           String res = "";
-           for(char ch:stack) res = res + ch;
-           return res;
+           StringBuilder res =new StringBuilder();
+           while(!stack.isEmpty()){
+                res.append(stack.pop());
+           }
+           return res.reverse().toString();
     }
 }
