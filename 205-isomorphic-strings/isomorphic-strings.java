@@ -17,7 +17,7 @@ class Solution {
               }
               if(t.equals(res.toString())) return true;
               return false;
-           };
+           }
            return false;
     }
 }
