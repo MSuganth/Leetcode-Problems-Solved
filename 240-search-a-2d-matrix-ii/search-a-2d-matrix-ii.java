@@ -1,24 +1,12 @@
 class Solution {
     public static boolean binary(int[] arr,int k){
-          int mid = arr.length/2;
           int l = 0;
           int r = arr.length-1;
-          if(k == arr[mid]) return true;
-          else if(k < arr[mid]){
-               r = mid;
-               while(l<=r){
-                    if(arr[l] == k || arr[r] == k) return true;
-                    l++;
-                    r--;
-               }
-          }
-          else{
-            l = mid;
-            while(l<=r && l<arr.length){
-                    if(arr[l] == k || arr[r] == k) return true;
-                    l++;
-                    r--;
-               }
+          while(l<=r){
+             int mid = (l+r)/2;
+             if(k == arr[mid]) return true;
+             else if(k < arr[mid]) r = mid-1;
+             else l = mid +1;
           }
           return false;
     }
