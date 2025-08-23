@@ -7,9 +7,7 @@ class Solution {
            while(r < nums.length){
                 sum += nums[r];
                 while(sum >= target){
-                    if(sum >= target){
-                       if( (r-l)+1 < min) min = (r-l)+1;
-                    }
+                    if( (r-l)+1 < min) min = (r-l)+1;
                     sum -= nums[l];
                     l++;
                 }
