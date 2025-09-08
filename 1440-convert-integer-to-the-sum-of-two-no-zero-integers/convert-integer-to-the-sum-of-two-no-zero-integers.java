@@ -7,20 +7,11 @@ class Solution {
           return true;
     }
     public int[] getNoZeroIntegers(int n) {
-           int[] res = new int[2];
            for(int i = 1;i<=n;i++){
-               if(con(i)){
-                  for(int j = 1;j<=(n-i);j++){
-                      if(con(j)){
-                         if( i+j == n){
-                             res[0] = i;
-                             res[1] = j;
-                             return res;
-                         }
-                      }
-                  }
-               }
+                 int b = n-i;
+                 if(con(i) && con(b)) return (new int[]{i,b});
            }
-           return res;
+           return new int[]{0,0};
+
     }
 }
