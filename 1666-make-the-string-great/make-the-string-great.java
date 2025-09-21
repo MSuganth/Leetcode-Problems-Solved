@@ -20,7 +20,6 @@ class Solution {
                           break;
                      }
                 }
-                // System.out.println(t);
                 s = t.toString();
                 if(!f) c = false;
            }
